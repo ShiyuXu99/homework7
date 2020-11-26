@@ -60,8 +60,10 @@ function gettingJSON(){
 
         let imageID = json.weather[0].icon;
         tempImg= "http://openweathermap.org/img/wn/" +imageID + ".png";
-        document.getElementById('tempImg').src = tempImg;
+
         document.getElementById("forecast").style.display = "block";
+        document.getElementById('tempImg').src = tempImg;
+        document.getElementById("tempImg").alt = json.weather[0].description + " picture";
         document.getElementById("loc").innerHTML = json.name;
         document.getElementById("temp").innerHTML = json.main.temp + " with " + json.weather[0].description;
     });
