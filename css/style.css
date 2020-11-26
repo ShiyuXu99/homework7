@@ -18,10 +18,12 @@ div{
 	font-size:125%;
 	margin-left: 25px;
 }
+
 #forecast{
 	display:none;
 	text-align: center;
 }
+
 #forecast img{
 	width: 25vw;
 	border: 8px solid blue;
